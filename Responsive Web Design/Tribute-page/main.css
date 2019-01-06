@@ -1,0 +1,56 @@
+body {
+  font-family: Lato, Arial;
+  margin: 0;
+}
+
+section {
+  padding : 2em 1em;
+}
+
+section:nth-of-type(odd) {
+  background-color: hsl(90deg, 50%, 80%);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+h2#sub-title {
+  font-size: 1em;
+  text-align: center;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+p#img-caption {
+  text-align: center;
+}
+
+section#content {
+  padding-left : 20%;
+  padding-right : 20%;
+}
+
+li {
+  margin : 1em 0;
+}
+
+p#more {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+@media (max-width: 600px) {
+  section#content {
+    padding-left : 1em;
+    padding-right : 1em;
+  }
+}
