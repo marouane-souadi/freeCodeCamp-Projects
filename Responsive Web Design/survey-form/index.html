@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css"  href="main.css"/>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Let me now how i can improve my Form Project</p>
+  <form action="" id="survey-form">
+    <div class="form">
+      <label class="title" id="name-label" for="name">Name</label>
+      <input type="text" id="name" placeholder="type in your name" required>
+      <label class="title" id="email-label" for="email">Email</label>
+      <input type="email" id="email" placeholder="type in your email" required>
+      <label class="title" id="number-label" for="number">Give my Form a score from 1 to 10</label>
+      <input type="number" id="number" min="0" max="10" placeholder="between 0 and 10">
+      <label class="title" id="dropdown-label" for="dropdown">Your actual status</label>
+      <select  id="dropdown">
+        <option value="volvo">Student</option>
+        <option value="saab">Employe</option>
+        <option value="mercedes">Freelancer</option>
+        <option value="audi">Employer</option>
+      </select>
+    <label class="title" id="dropdown-label" for="color-quality">Colors quality</label>
+    <div class="fieldset">
+      <div>
+        <input type="radio" id="good-color" value="good" name="color">
+        <label for="good-color">Good</label>
+      </div>
+      <div>
+        <input type="radio" id="medium-color" value="medium" name="color">
+        <label  for="medium-color">Medium</label>
+      </div>
+      <div>
+        <input type="radio" id="bad-color" value="bad" name="color">
+        <label for="bad-color">Bad</label>
+      </div>
+    </div>
+    <label class="title" id="dropdown-label" for="layout-quality">Layout quality</label>
+    <div class="fieldset">
+        <div>
+          <input type="radio" id="good-layout" value="good" name="layout">
+          <label for="good-layout">Good</label>
+        </div>
+        <div>
+          <input type="radio" id="medium-layout" value="medium" name="layout">
+          <label  for="medium-layout">Medium</label>
+        </div>
+        <div>
+          <input type="radio" id="bad-layout" value="bad" name="layout">
+          <label for="bad-layout">Bad</label>
+        </div>
+      </div>
+    
+    <label class="title" id="dropdown-label" for="dropdown">Which part must be improved</label>
+    <div class="fieldset">
+      <div><input type="checkbox" id="colors-improve" name="improve" value="colors"><label for="colors-improve">Colors</label></div>
+      <div><input type="checkbox" id="layout-improve" name="improve" value="layout"><label for="layout-improve">Layout</label></div>
+      <div><input type="checkbox" id="responsivness-improve" name="improve" value="responsivness"><label for="responsivness-improve">Responsivness</label></div>
+    </div>
+    <label class="title" for="textarea">Additionnal comments</label>
+    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+  </div>
+    <button class="btn" id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>

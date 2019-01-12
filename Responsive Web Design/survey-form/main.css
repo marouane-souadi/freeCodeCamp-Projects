@@ -1,0 +1,45 @@
+body {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: lightgray;
+}
+
+div.form{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+label.title {
+  width: 50%;
+  text-align: right;
+}
+
+input, label, textarea, select {
+  padding: 0.2em;
+}
+
+.btn {
+  margin-top: 1em;
+  border : none;
+  padding: 0.5em 1em;
+  color: white;
+  background-color: darkslategray;
+  border-radius: 0.3em;
+  font-size: 1.2em;
+}
+
+.fieldset {
+  text-align: left;
+}
+
+@media (max-width:600px) {
+  div.form {
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  label.title {
+    width: auto;
+    text-align: left;
+  }
+}
